@@ -209,29 +209,35 @@ footer p {
   text-align: right;
 }
 
-/* line 175, ../../compass/src/main.scss */
-header > nav a {
+/* line 174, ../../compass/src/main.scss */
+nav {
+  width: 100%;
+  height: 10px;
+}
+/* line 177, ../../compass/src/main.scss */
+nav a {
+  border-bottom: 0;
   color: #999;
   font-size: 13px;
 }
-/* line 177, ../../compass/src/main.scss */
-header > nav a:hover {
+/* line 180, ../../compass/src/main.scss */
+nav a:hover {
   color: #444;
   text-decoration: underline;
 }
-/* line 182, ../../compass/src/main.scss */
-header > nav a.prevarticle {
+/* line 185, ../../compass/src/main.scss */
+nav a.prevarticle {
   float: left;
 }
-/* line 184, ../../compass/src/main.scss */
-header > nav a.prevarticle:before {
+/* line 187, ../../compass/src/main.scss */
+nav a.prevarticle:before {
   content: "«";
 }
-/* line 188, ../../compass/src/main.scss */
-header > nav a.nextarticle {
+/* line 191, ../../compass/src/main.scss */
+nav a.nextarticle {
   float: right;
 }
-/* line 190, ../../compass/src/main.scss */
-header > nav a.nextarticle:after {
+/* line 193, ../../compass/src/main.scss */
+nav a.nextarticle:after {
   content: "»";
 }

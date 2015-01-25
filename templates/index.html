@@ -10,7 +10,7 @@
         <article>
             {{ article.summary }}
             {% if article.summary != article.content %}
-            <p><a href="{{ SITEURL }}/{{ article.url }}" class="readmore">Read more&hellip;</a>
+                <p><a href="{{ SITEURL }}/{{ article.url }}" class="readmore">Read more&hellip;</a>
             {% endif %}
         </article>
     {% endfor %}

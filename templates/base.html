@@ -23,6 +23,7 @@
 
 <body>
 {% include 'github.html' %}
+<h1><a href="{{ SITEURL }}" id="site-title">{{ SITENAME }} {% if SITESUBTITLE %} <strong>{{ SITESUBTITLE }}</strong>{% endif %}</a></h1>
         {% block content %}
         {% endblock %}
 
@@ -61,7 +62,7 @@
     </nav>
 {% endif %}
 <header>
-    <h1><a href="{{ SITEURL }}" id="site-title">{{ SITENAME }} {% if SITESUBTITLE %} <strong>{{ SITESUBTITLE }}</strong>{% endif %}</a> : <a href="{{ SITEURL }}/{{ article.url }}" id="page-title">{{ article.title }}</a></h1>
+    <h2><a href="{{ SITEURL }}/{{ article.url }}" id="page-title">{{ article.title }}</a></h2>
     <div class="posted-line">
         Posted {% if not HIDE_DATE %}<time datetime="{{ article.date.isoformat() }}">{{ article.locale_date }}</time>{% endif %} in <a href="{{ SITEURL }}/{{ article.category.url }}" id="page-category">{{ article.category }}</a>
         <div class="tags">

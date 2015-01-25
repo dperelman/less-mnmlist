@@ -16,7 +16,7 @@ body {
     font: 20px Hoefler Text, bodyfont, serif;
     line-height: 30px;
     max-width: 30em;
-    margin: 60px 14px 0 64px;
+    margin: 30px 14px 0 64px;
 }
 
 @mixin heading ($font-size, $color: #666) {
@@ -25,22 +25,39 @@ body {
     font-size: $font-size;
 }
 
-h1 {
+body > h1 {
+    @include heading(1.7em, #333);
+    font-weight: normal;
+    margin-bottom: 1em;
+    a {
+        border-bottom: 0;
+    }
+}
+
+header > h2 {
     @include heading(1.5em, #333);
     font-weight: normal;
     margin-bottom: 0;
 }
 
-h2 {
-    @include heading(1.3em);
-}
+article {
+    h1 {
+        @include heading(1.5em, #333);
+        font-weight: normal;
+        margin-bottom: 0;
+    }
 
-h3 {
-    @include heading(1em);
-}
+    h2 {
+        @include heading(1.3em);
+    }
 
-h4 {
-    @include heading(0.9em);
+    h3 {
+        @include heading(1em);
+    }
+
+    h4 {
+        @include heading(0.9em);
+    }
 }
 
 header > .posted-line {
@@ -92,7 +109,12 @@ a {
     border-bottom: #999 1px solid;
     color: #303030;
     text-decoration: none;
-    &:hover { color: #999; }
+    &:hover {
+        color: #999;
+        strong {
+            color: #999;
+        }
+    }
 }
 
 ul, ol {
@@ -109,8 +131,9 @@ strong {
     font-weight: bold;
 }
 
-tt, pre {
-    background-color: #fafafa;
+tt, pre, p code {
+    background-color: #ffc;
+    color: #003;
     font-family: Inconsolata, Monaco, monospace;
     line-height: 1.2em;
 }
@@ -173,7 +196,7 @@ footer {
 
 nav {
     width: 100%;
-    height: 10px;
+    height: 6px;
     a {
         border-bottom: 0;
         color: #999;

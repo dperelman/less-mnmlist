@@ -150,3 +150,26 @@ footer {
         text-align: right;
     }
 }
+
+nav {
+    a {
+        color: #999;
+        &:hover {
+            color: #444;
+            text-decoration: underline;
+        }
+        font-size:13px;
+        &.prevarticle {
+            float: left;
+            &:before {
+                content: "«";
+            }
+        }
+        &.nextarticle {
+            float: right;
+            &:after {
+                content: "»";
+            }
+        }
+    }
+}

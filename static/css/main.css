@@ -1,4 +1,4 @@
-@import url("pygment.css");
+@charset "UTF-8";
 /*
     Theme Name: mnmlist
     Theme URI: http://mathieu.agopian.info/mnmlist/theme.html
@@ -8,6 +8,7 @@
 
     This theme is uncopyrighted, free, and offered as is.
 */
+@import url("pygment.css");
 /* line 13, ../../compass/src/main.scss */
 body {
   background: #fff;
@@ -20,7 +21,7 @@ body {
 
 /* line 28, ../../compass/src/main.scss */
 h1 {
-  color: #333333;
+  color: #333;
   font-family: Helvetica, sans-serif;
   font-size: 1.5em;
   font-weight: normal;
@@ -29,21 +30,21 @@ h1 {
 
 /* line 34, ../../compass/src/main.scss */
 h2 {
-  color: #666666;
+  color: #666;
   font-family: Helvetica, sans-serif;
   font-size: 1.3em;
 }
 
 /* line 38, ../../compass/src/main.scss */
 h3 {
-  color: #666666;
+  color: #666;
   font-family: Helvetica, sans-serif;
   font-size: 1em;
 }
 
 /* line 42, ../../compass/src/main.scss */
 h4 {
-  color: #666666;
+  color: #666;
   font-family: Helvetica, sans-serif;
   font-size: 0.9em;
 }
@@ -183,4 +184,31 @@ footer li {
 /* line 149, ../../compass/src/main.scss */
 footer p {
   text-align: right;
+}
+
+/* line 155, ../../compass/src/main.scss */
+nav a {
+  color: #999;
+  font-size: 13px;
+}
+/* line 157, ../../compass/src/main.scss */
+nav a:hover {
+  color: #444;
+  text-decoration: underline;
+}
+/* line 162, ../../compass/src/main.scss */
+nav a.prevarticle {
+  float: left;
+}
+/* line 164, ../../compass/src/main.scss */
+nav a.prevarticle:before {
+  content: "«";
+}
+/* line 168, ../../compass/src/main.scss */
+nav a.nextarticle {
+  float: right;
+}
+/* line 170, ../../compass/src/main.scss */
+nav a.nextarticle:after {
+  content: "»";
 }

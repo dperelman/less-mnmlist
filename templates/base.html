@@ -42,9 +42,33 @@
             </nav>
                 <p id="theme-credit"><a href="http://mathieu.agopian.info/mnmlist/theme.html">Thème mnmlist</a></p>
         </footer>
-
-{% include 'analytics.html' %}
-{% include 'piwik.html' %}
-{% include 'disqus_script.html' %}
 </body>
 </html>
+
+{% macro article_header(SITEURL, SITENAME, SITESUBTITLE, article, include_history=False) -%}
+<header>
+    <h1><a href="{{ SITEURL }}" id="site-title">{{ SITENAME }} {% if SITESUBTITLE %} <strong>{{ SITESUBTITLE }}</strong>{% endif %}</a> : <a href="{{ SITEURL }}/{{ article.url }}" id="page-title">{{ article.title }}</a></h1>
+    <div class="posted-line">
+        Posted {% if not HIDE_DATE %}<time datetime="{{ article.date.isoformat() }}">{{ article.locale_date }}</time>{% endif %} in <a href="{{ SITEURL }}/{{ article.category.url }}" id="page-category">{{ article.category }}</a>
+        <div class="tags">
+        {% for tag in article.tags %}
+            <a href="{{ SITEURL }}/{{ tag.url }}" class="tag">{{ tag }}</a>
+        {% endfor %}
+        </div>
+    </div>
+    {% if include_history %}
+        <nav>
+        {% if article.prev_article %}
+                <a href="{{ SITEURL }}/{{ article.prev_article.url}}" class="prevarticle">
+                    {{ article.prev_article.title }}
+                </a>
+        {% endif %}
+        {% if article.next_article %}
+                <a href="{{ SITEURL }}/{{ article.next_article.url}}" class="nextarticle">
+                    {{ article.next_article.title }}
+                </a>
+        {% endif %}
+        </nav>
+    {% endif %}
+</header>
+{%- endmacro %}

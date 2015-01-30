@@ -2,8 +2,8 @@
 {% from "base.html" import article_header %}
 {% block title %}{{ super() }} : {{ article.title }}{% endblock %}
 {% block content %}        
-{{ article_header(SITEURL, SITENAME, SITESUBTITLE, article, include_history=True) }}
 <article>
+{{ article_header(SITEURL, SITENAME, SITESUBTITLE, article, include_history=True) }}
     {{ article.content }}
 </article>
 {% endblock %}

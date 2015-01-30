@@ -1,11 +1,11 @@
 {% extends "base.html" %}
-{% block title %}{{ page.title }}{% endblock %}
+{% from "base.html" import article_header %}
+{% block title %}{{ super() }} : {{ page.title }}{% endblock %}
 {% block content %}        
-<header>
-    <h1><a href="{{ SITEURL }}" id="site-title">{{ SITENAME }} {% if SITESUBTITLE %} <strong>{{ SITESUBTITLE }}</strong>{% endif %}</a> :
-        <a href="{{ SITEURL }}/{{ page.url }}" id="page-title">{{ page.title }}</a></h1>
-</header>
-<article>    
+<article>
+    <header>
+        <h2><a href="{{ SITEURL }}/{{ page.url }}" id="page-title">{{ page.title }}</a></h2>
+    </header>
     {{ page.content }}
 </article>
 {% endblock %}

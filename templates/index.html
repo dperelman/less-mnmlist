@@ -5,9 +5,9 @@
 {% if articles %}
     {% for article in articles %}
 
+        <article>
         {{ article_header(SITEURL, SITENAME, SITESUBTITLE, article, include_history=False) }}
 
-        <article>
             {{ article.summary }}
             {% if article.summary != article.content %}
                 <p><a href="{{ SITEURL }}/{{ article.url }}" class="readmore">Read more&hellip;</a>

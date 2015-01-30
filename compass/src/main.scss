@@ -25,16 +25,34 @@ body {
     font-size: $font-size;
 }
 
-body > h1 {
+body > header > h1 {
     @include heading(1.7em, #333);
     font-weight: normal;
-    margin-bottom: 1em;
+    margin-bottom: 0;
     a {
         border-bottom: 0;
     }
 }
+body > header > nav {
+    margin-bottom: 2em;
+    background: #fff;
+    color: #666;
+    font-family:helvetica, sans-serif;
+    font-size:13px;
+    letter-spacing:4px;
+    a {
+        border-bottom: none;
+        color: #888;
+    }
+    li {
+        display: inline;
+    }
+    p {
+        text-align: right;
+    }
+}
 
-header > h2 {
+article > header > h2 {
     @include heading(1.5em, #333);
     font-weight: normal;
     margin-bottom: 0;
@@ -217,5 +235,26 @@ nav {
                 content: "»";
             }
         }
+    }
+}
+
+ul.tagcloud {
+    list-style: none;
+    padding: 0;
+    li {
+        display: inline-block;
+        margin-left: 1ex;
+    }
+    li.tag-1 {
+        font-size: 150%;
+    }
+    li.tag-2 {
+        font-size: 120%;
+    }
+    li.tag-3 {
+        font-size: 100%;
+    }
+    li.tag-4 {
+        font-size: 80%;
     }
 }

@@ -147,6 +147,11 @@ strong {
     color: #555555;
     font-family: Georgia, "Times New Roman", Times, serif;
     font-weight: bold;
+
+    code {
+        color: purple;
+        font-family: Inconsolata, Monaco, monospace, Courier;
+    }
 }
 
 pre, p code {
@@ -157,6 +162,11 @@ pre, p code {
     padding: 1px 4px;
     font-family: Inconsolata, Monaco, monospace, Courier;
     line-height: 1.2em;
+
+    strong {
+        color: purple;
+        font-family: Inconsolata, Monaco, monospace, Courier;
+    }
 }
 p a code, p code a, pre a {
     color: #22a;
@@ -268,6 +278,13 @@ ul.tagcloud {
         font-size: 100%;
     }
     li.tag-4 {
+        font-size: 80%;
+    }
+}
+
+.footnote {
+    li {
+        padding: 0;
         font-size: 80%;
     }
 }

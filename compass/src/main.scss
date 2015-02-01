@@ -149,11 +149,24 @@ strong {
     font-weight: bold;
 }
 
-tt, pre, p code {
-    background-color: #ffc;
-    color: #003;
-    font-family: Inconsolata, Monaco, monospace;
+pre, p code {
+    /* From en.wikipedia.org's CSS. */
+    background-color: #F9F9F9;
+    border: 1px solid #DDD;
+    border-radius: 2px;
+    padding: 1px 4px;
+    font-family: Inconsolata, Monaco, monospace, Courier;
     line-height: 1.2em;
+}
+p a code, p code a, pre a {
+    color: #22a;
+    &:hover {
+        text-decoration: underline;
+        color: #33d;
+    }
+    //&:visited {
+    //    color: #40a;
+    //}
 }
 
 pre {

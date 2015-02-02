@@ -56,15 +56,19 @@ body > header > nav p {
 }
 
 /* line 55, ../../compass/src/main.scss */
-article > header > h2 {
+article > header > h2, h1.comments {
   color: #333;
   font-family: Helvetica, sans-serif;
   font-size: 1.5em;
-  font-weight: normal;
+  font-weight: bold;
   margin-bottom: 0;
 }
+/* line 60, ../../compass/src/main.scss */
+article > header > h2 a, h1.comments a {
+  border-bottom: 0;
+}
 
-/* line 62, ../../compass/src/main.scss */
+/* line 66, ../../compass/src/main.scss */
 article h1 {
   color: #333;
   font-family: Helvetica, sans-serif;
@@ -72,116 +76,116 @@ article h1 {
   font-weight: normal;
   margin-bottom: 0;
 }
-/* line 68, ../../compass/src/main.scss */
+/* line 72, ../../compass/src/main.scss */
 article h2 {
   color: #666;
   font-family: Helvetica, sans-serif;
   font-size: 1.3em;
 }
-/* line 72, ../../compass/src/main.scss */
+/* line 76, ../../compass/src/main.scss */
 article h3 {
   color: #666;
   font-family: Helvetica, sans-serif;
   font-size: 1em;
 }
-/* line 76, ../../compass/src/main.scss */
+/* line 80, ../../compass/src/main.scss */
 article h4 {
   color: #666;
   font-family: Helvetica, sans-serif;
   font-size: 0.9em;
 }
 
-/* line 81, ../../compass/src/main.scss */
-header > .posted-line {
+/* line 85, ../../compass/src/main.scss */
+header > .posted-line, article.comment > header > p {
   font-size: 50%;
   line-height: 1.5em;
   margin-top: 0.5em;
   color: #c0c0c0;
 }
-/* line 86, ../../compass/src/main.scss */
-header > .posted-line time {
+/* line 90, ../../compass/src/main.scss */
+header > .posted-line time, article.comment > header > p time {
   color: #999;
 }
-/* line 89, ../../compass/src/main.scss */
-header > .posted-line a {
+/* line 93, ../../compass/src/main.scss */
+header > .posted-line a, article.comment > header > p a {
   color: #999;
 }
-/* line 91, ../../compass/src/main.scss */
-header > .posted-line a:hover {
+/* line 95, ../../compass/src/main.scss */
+header > .posted-line a:hover, article.comment > header > p a:hover {
   color: #444;
   text-decoration: underline;
 }
-/* line 97, ../../compass/src/main.scss */
-header > .posted-line .tags:before {
+/* line 101, ../../compass/src/main.scss */
+header > .posted-line .tags:before, article.comment > header > p .tags:before {
   content: "Tags: ";
 }
-/* line 100, ../../compass/src/main.scss */
-header > .posted-line .tags .tag {
+/* line 104, ../../compass/src/main.scss */
+header > .posted-line .tags .tag, article.comment > header > p .tags .tag {
   margin-left: 1.5ex;
 }
 
-/* line 106, ../../compass/src/main.scss */
+/* line 110, ../../compass/src/main.scss */
 img {
   border: none;
 }
 
-/* line 110, ../../compass/src/main.scss */
+/* line 114, ../../compass/src/main.scss */
 blockquote {
   border-left: 1px solid #A5ABAB;
   margin: 0px;
   padding: 0 12px 0 12px;
 }
 
-/* line 116, ../../compass/src/main.scss */
+/* line 120, ../../compass/src/main.scss */
 p {
   line-height: 30px;
   margin: 30px auto;
   text-indent: 0px;
 }
-/* line 120, ../../compass/src/main.scss */
+/* line 124, ../../compass/src/main.scss */
 p.caption {
   font-size: 80%;
   margin-top: 0;
 }
 
-/* line 126, ../../compass/src/main.scss */
+/* line 130, ../../compass/src/main.scss */
 a {
   border-bottom: #999 1px solid;
   color: #303030;
   text-decoration: none;
 }
-/* line 130, ../../compass/src/main.scss */
+/* line 134, ../../compass/src/main.scss */
 a:hover {
   color: #999;
 }
-/* line 132, ../../compass/src/main.scss */
+/* line 136, ../../compass/src/main.scss */
 a:hover strong {
   color: #999;
 }
 
-/* line 138, ../../compass/src/main.scss */
+/* line 142, ../../compass/src/main.scss */
 ul, ol {
   padding: .5em 0em 1em 3.2em;
 }
-/* line 140, ../../compass/src/main.scss */
+/* line 144, ../../compass/src/main.scss */
 ul li, ol li {
   line-height: 30px;
   padding: 6px 0 0 0;
 }
 
-/* line 146, ../../compass/src/main.scss */
+/* line 150, ../../compass/src/main.scss */
 strong {
   color: #555555;
   font-family: Georgia, "Times New Roman", Times, serif;
   font-weight: bold;
 }
-/* line 151, ../../compass/src/main.scss */
+/* line 155, ../../compass/src/main.scss */
 strong code {
   color: purple;
   font-family: Inconsolata, Monaco, monospace, Courier;
 }
 
-/* line 157, ../../compass/src/main.scss */
+/* line 161, ../../compass/src/main.scss */
 pre, p code {
   /* From en.wikipedia.org's CSS. */
   background-color: #F9F9F9;
@@ -191,72 +195,72 @@ pre, p code {
   font-family: Inconsolata, Monaco, monospace, Courier;
   line-height: 1.2em;
 }
-/* line 166, ../../compass/src/main.scss */
+/* line 170, ../../compass/src/main.scss */
 pre strong, p code strong {
   color: purple;
   font-family: Inconsolata, Monaco, monospace, Courier;
 }
 
-/* line 171, ../../compass/src/main.scss */
+/* line 175, ../../compass/src/main.scss */
 p a code, p code a, pre a {
   color: #22a;
 }
-/* line 173, ../../compass/src/main.scss */
+/* line 177, ../../compass/src/main.scss */
 p a code:hover, p code a:hover, pre a:hover {
   text-decoration: underline;
   color: #33d;
 }
 
-/* line 182, ../../compass/src/main.scss */
+/* line 186, ../../compass/src/main.scss */
 pre {
   font-size: 0.8em;
   overflow: auto;
   padding: 10px;
 }
 
-/* line 188, ../../compass/src/main.scss */
+/* line 192, ../../compass/src/main.scss */
 header {
   padding-bottom: 20px;
 }
-/* line 190, ../../compass/src/main.scss */
+/* line 194, ../../compass/src/main.scss */
 header a {
   border-bottom: none;
 }
-/* line 192, ../../compass/src/main.scss */
+/* line 196, ../../compass/src/main.scss */
 header a#page-title {
   font-weight: bold;
 }
 
-/* line 196, ../../compass/src/main.scss */
+/* line 200, ../../compass/src/main.scss */
 #article-list {
   margin-top: 100px;
 }
-/* line 198, ../../compass/src/main.scss */
+/* line 202, ../../compass/src/main.scss */
 #article-list ol li {
   line-height: 1.2em;
   list-style-type: none;
   padding-bottom: 10px;
 }
 
-/* line 205, ../../compass/src/main.scss */
+/* line 209, ../../compass/src/main.scss */
 .note {
   background: #efefef;
   margin: 1em 0;
 }
-/* line 208, ../../compass/src/main.scss */
+/* line 212, ../../compass/src/main.scss */
 .note p {
   display: inline;
 }
-/* line 210, ../../compass/src/main.scss */
+/* line 214, ../../compass/src/main.scss */
 .note p.first {
   font-weight: bold;
 }
-/* line 212, ../../compass/src/main.scss */
+/* line 216, ../../compass/src/main.scss */
 .note p.first:after {
   content: ' : ';
 }
 
-/* line 219, ../../compass/src/main.scss */
+/* line 223, ../../compass/src/main.scss */
 footer {
   background: #fff;
   color: #666;
@@ -265,82 +269,133 @@ footer {
   letter-spacing: 4px;
   margin-left: 20px;
 }
-/* line 226, ../../compass/src/main.scss */
+/* line 230, ../../compass/src/main.scss */
 footer a {
   border-bottom: none;
   color: #c0c0c0;
 }
-/* line 230, ../../compass/src/main.scss */
+/* line 234, ../../compass/src/main.scss */
 footer li {
   display: inline;
 }
-/* line 233, ../../compass/src/main.scss */
+/* line 237, ../../compass/src/main.scss */
 footer p {
   text-align: right;
 }
 
-/* line 238, ../../compass/src/main.scss */
+/* line 242, ../../compass/src/main.scss */
 nav {
   width: 100%;
   height: 6px;
 }
-/* line 241, ../../compass/src/main.scss */
+/* line 245, ../../compass/src/main.scss */
 nav a {
   border-bottom: 0;
   color: #999;
   font-size: 13px;
 }
-/* line 244, ../../compass/src/main.scss */
+/* line 248, ../../compass/src/main.scss */
 nav a:hover {
   color: #444;
   text-decoration: underline;
 }
-/* line 249, ../../compass/src/main.scss */
+/* line 253, ../../compass/src/main.scss */
 nav a.prevarticle {
   float: left;
 }
-/* line 251, ../../compass/src/main.scss */
+/* line 255, ../../compass/src/main.scss */
 nav a.prevarticle:before {
   content: "«";
 }
-/* line 255, ../../compass/src/main.scss */
+/* line 259, ../../compass/src/main.scss */
 nav a.nextarticle {
   float: right;
 }
-/* line 257, ../../compass/src/main.scss */
+/* line 261, ../../compass/src/main.scss */
 nav a.nextarticle:after {
   content: "»";
 }
 
-/* line 264, ../../compass/src/main.scss */
+/* line 268, ../../compass/src/main.scss */
 ul.tagcloud {
   list-style: none;
   padding: 0;
 }
-/* line 267, ../../compass/src/main.scss */
+/* line 271, ../../compass/src/main.scss */
 ul.tagcloud li {
   display: inline-block;
   margin-left: 1ex;
 }
-/* line 271, ../../compass/src/main.scss */
+/* line 275, ../../compass/src/main.scss */
 ul.tagcloud li.tag-1 {
   font-size: 150%;
 }
-/* line 274, ../../compass/src/main.scss */
+/* line 278, ../../compass/src/main.scss */
 ul.tagcloud li.tag-2 {
   font-size: 120%;
 }
-/* line 277, ../../compass/src/main.scss */
+/* line 281, ../../compass/src/main.scss */
 ul.tagcloud li.tag-3 {
   font-size: 100%;
 }
-/* line 280, ../../compass/src/main.scss */
+/* line 284, ../../compass/src/main.scss */
 ul.tagcloud li.tag-4 {
   font-size: 80%;
 }
 
-/* line 286, ../../compass/src/main.scss */
+/* line 290, ../../compass/src/main.scss */
 .footnote li {
   padding: 0;
   font-size: 80%;
+}
+
+/* line 296, ../../compass/src/main.scss */
+section.comments > header p a {
+  border-bottom: 1px solid #999;
+}
+
+/* line 299, ../../compass/src/main.scss */
+article.comment {
+  border: 1px solid #DDDDDD;
+  padding: 5px 0px 0px 5px;
+  margin: 0px -1px 5px 0px;
+}
+/* line 305, ../../compass/src/main.scss */
+article.comment header img {
+  float: left;
+  margin: 7px;
+}
+/* line 309, ../../compass/src/main.scss */
+article.comment header p, article.comment header h4 {
+  margin: 0;
+}
+/* line 312, ../../compass/src/main.scss */
+article.comment header a.permalink {
+  font-size: 80%;
+  margin-right: 1ex;
+  float: right;
+  color: #888;
+}
+/* line 318, ../../compass/src/main.scss */
+article.comment header a.permalink:hover {
+  color: #555;
+}
+/* line 323, ../../compass/src/main.scss */
+article.comment p {
+  margin-top: 0;
+}
+
+/* line 327, ../../compass/src/main.scss */
+article.comment-depth1 {
+  margin-left: 50px;
+}
+
+/* line 330, ../../compass/src/main.scss */
+article.comment-depth2 {
+  margin-left: 90px;
+}
+
+/* line 333, ../../compass/src/main.scss */
+article.comment-depth3 {
+  margin-left: 120px;
 }

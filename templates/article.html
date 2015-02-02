@@ -5,5 +5,42 @@
 <article>
 {{ article_header(SITEURL, SITENAME, SITESUBTITLE, article, include_history=True) }}
     {{ article.content }}
+<section class="comments">
+    <header>
+        <h1 class="comments"><a href="#comments" name="comments">Comments</a></h1>
+        <p>Have something to add? Post a comment by sending an email to <a href="mailto:perelman+blog@cs.washington.edu">perelman+blog@cs.washington.edu</a>. You may use <a href="https://en.wikipedia.org/wiki/Markdown">Markdown</a> for formatting.
+{% if article.comments %}
+        <h2>{{article.comments_count}} comment{% if article.comments_count > 1 %}s{% endif %}</h2>
+    </header>
+    {% for comment in article.comments recursive %}
+        {% if loop.depth0 == 0 %}
+            {% set marginLeft = 0 %}
+        {% else %}
+            {% set marginLeft = 50 %}
+        {% endif %}
+        <article id="comment-{{comment.slug}}" class="comment comment-depth{{loop.depth0}}">
+            <header>
+                <img src="{{ SITEURL }}/{{ comment.avatar }}"
+                    alt="Avatar"
+                    height="{{ PELICAN_COMMENT_SYSTEM_IDENTICON_SIZE }}"
+                    width="{{ PELICAN_COMMENT_SYSTEM_IDENTICON_SIZE }}">
+                <a href="{{ SITEURL }}/{{ article.url }}#comment-{{comment.slug}}" rel="bookmark" title="Permalink to this comment" class="permalink">#</a>
+                <h4>{% if comment.website %}
+                        <a href="{{comment.website}}">{{ comment.author }}</a>
+                    {% else %}
+                        {{ comment.author }}
+                {% endif %}</h4>
+                <p>Posted <abbr class="published" title="{{ comment.date.isoformat() }}">{{ comment.locale_date }} {{ comment.date|strftime('%H:%M') }}</abbr></p>
+            </header>
+            {{ comment.content }}
+            {% if comment.replies %}
+                {{ loop(comment.replies) }}
+            {% endif %}
+        </article>
+    {% endfor %}
+{% else %}
+    <p>There are no comments yet.<p>
+{% endif %}
+</section>
 </article>
 {% endblock %}

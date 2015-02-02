@@ -12,6 +12,9 @@
             {% if article.summary != article.content %}
                 <p><a href="{{ SITEURL }}/{{ article.url }}" class="readmore">Read more&hellip;</a>
             {% endif %}
+            {% if article.comments_count > 0 %}
+                <p><a href="{{ SITEURL }}/{{ article.url }}#comments">{{ article.comments_count }} comments</a>
+            {% endif %}
         </article>
     {% endfor %}
 {% else %}

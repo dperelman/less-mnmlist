@@ -125,6 +125,7 @@ p {
         font-size: 80%;
         margin-top: 0;
     }
+    text-align: justify;
 }
 
 a {
@@ -171,6 +172,10 @@ pre, p code {
         color: purple;
         font-family: Inconsolata, Monaco, monospace, Courier;
     }
+    i, em {
+        color: #BB60D5;
+        font-family: Inconsolata, Monaco, monospace, Courier;
+    }
 }
 p a code, p code a, pre a {
     color: #22a;
@@ -181,6 +186,9 @@ p a code, p code a, pre a {
     //&:visited {
     //    color: #40a;
     //}
+}
+code a, pre a {
+    border-bottom: none;
 }
 
 pre {

@@ -1,6 +1,6 @@
 {% extends "base.html" %}
 {% from "base.html" import article_header %}
-{% block title %}{{ super() }} : {{ page.title }}{% endblock %}
+{% block title %}{{ page.title }} : {{ super() }}{% endblock %}
 {% block content %}        
 <article>
     <header>

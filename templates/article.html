@@ -1,6 +1,6 @@
 {% extends "base.html" %}
 {% from "base.html" import article_header %}
-{% block title %}{{ super() }} : {{ article.title }}{% endblock %}
+{% block title %}{{ article.title }} : {{ super() }}{% endblock %}
 {% block feedlinks %}
 <link rel="alternate" type="application/atom+xml" title="{{SITENAME}} - {{article.title}} - Comment Atom Feed" href="{{ FEED_DOMAIN }}/{{ PELICAN_COMMENT_SYSTEM_FEED|format(article.slug) }}">
 {% endblock %}

@@ -7,7 +7,9 @@
 {% block content %}        
 <article>
 {{ article_header(SITEURL, SITENAME, SITESUBTITLE, article, include_history=True) }}
-    {{ article.content }}
+    <section class="article-content">
+        {{ article.content }}
+    </section>
 <section class="comments">
     <header>
         <h1 class="comments"><a href="#comments" name="comments">Comments</a></h1>

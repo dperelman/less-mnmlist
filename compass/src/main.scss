@@ -159,42 +159,44 @@ strong {
     }
 }
 
-pre, p code {
-    /* From en.wikipedia.org's CSS. */
-    background-color: #F9F9F9;
-    border: 1px solid #DDD;
-    border-radius: 2px;
-    padding: 1px 4px;
-    font-family: Inconsolata, Monaco, monospace, Courier;
-    line-height: 1.2em;
-
-    strong {
-        color: purple;
+article section.article-content {
+    pre, li code, p code {
+        /* From en.wikipedia.org's CSS. */
+        background-color: #F9F9F9;
+        border: 1px solid #DDD;
+        border-radius: 2px;
+        padding: 1px 4px;
         font-family: Inconsolata, Monaco, monospace, Courier;
-    }
-    i, em {
-        color: #BB60D5;
-        font-family: Inconsolata, Monaco, monospace, Courier;
-    }
-}
-p a code, p code a, pre a {
-    color: #22a;
-    &:hover {
-        text-decoration: underline;
-        color: #33d;
-    }
-    //&:visited {
-    //    color: #40a;
-    //}
-}
-code a, pre a {
-    border-bottom: none;
-}
+        line-height: 1.2em;
 
-pre {
-    font-size: 0.8em;
-    overflow: auto;
-    padding: 10px;
+        strong {
+            color: purple;
+            font-family: Inconsolata, Monaco, monospace, Courier;
+        }
+        i, em {
+            color: #BB60D5;
+            font-family: Inconsolata, Monaco, monospace, Courier;
+        }
+    }
+    a code, code a, pre a {
+        color: #22a;
+        &:hover {
+            text-decoration: underline;
+            color: #33d;
+        }
+        //&:visited {
+        //    color: #40a;
+        //}
+    }
+    code a, pre a {
+        border-bottom: none;
+    }
+
+    pre {
+        font-size: 0.8em;
+        overflow: auto;
+        padding: 10px;
+    }
 }
 
 header {

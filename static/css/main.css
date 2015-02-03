@@ -187,7 +187,7 @@ strong code {
 }
 
 /* line 163, ../../compass/src/main.scss */
-article section.article-content pre, article section.article-content li code, article section.article-content p code {
+article section.article-content pre, article section.article-content li code, article section.article-content p code, article.comment pre, article.comment li code, article.comment p code {
   /* From en.wikipedia.org's CSS. */
   background-color: #F9F9F9;
   border: 1px solid #DDD;
@@ -197,52 +197,52 @@ article section.article-content pre, article section.article-content li code, ar
   line-height: 1.2em;
 }
 /* line 172, ../../compass/src/main.scss */
-article section.article-content pre strong, article section.article-content li code strong, article section.article-content p code strong {
+article section.article-content pre strong, article section.article-content li code strong, article section.article-content p code strong, article.comment pre strong, article.comment li code strong, article.comment p code strong {
   color: purple;
   font-family: Inconsolata, Monaco, monospace, Courier;
 }
 /* line 176, ../../compass/src/main.scss */
-article section.article-content pre i, article section.article-content pre em, article section.article-content li code i, article section.article-content li code em, article section.article-content p code i, article section.article-content p code em {
+article section.article-content pre i, article section.article-content pre em, article section.article-content li code i, article section.article-content li code em, article section.article-content p code i, article section.article-content p code em, article.comment pre i, article.comment pre em, article.comment li code i, article.comment li code em, article.comment p code i, article.comment p code em {
   color: #BB60D5;
   font-family: Inconsolata, Monaco, monospace, Courier;
 }
 /* line 181, ../../compass/src/main.scss */
-article section.article-content a code, article section.article-content code a, article section.article-content pre a {
+article section.article-content a code, article section.article-content code a, article section.article-content pre a, article.comment a code, article.comment code a, article.comment pre a {
   color: #22a;
 }
 /* line 183, ../../compass/src/main.scss */
-article section.article-content a code:hover, article section.article-content code a:hover, article section.article-content pre a:hover {
+article section.article-content a code:hover, article section.article-content code a:hover, article section.article-content pre a:hover, article.comment a code:hover, article.comment code a:hover, article.comment pre a:hover {
   text-decoration: underline;
   color: #33d;
 }
 /* line 191, ../../compass/src/main.scss */
-article section.article-content code a, article section.article-content pre a {
+article section.article-content code a, article section.article-content pre a, article.comment code a, article.comment pre a {
   border-bottom: none;
 }
 /* line 195, ../../compass/src/main.scss */
-article section.article-content pre {
+article section.article-content pre, article.comment pre {
   font-size: 0.8em;
   overflow: auto;
   padding: 10px;
 }
 /* line 200, ../../compass/src/main.scss */
-article section.article-content li p:first-child {
+article section.article-content li p:first-child, article.comment li p:first-child {
   margin-top: 0;
 }
 /* line 203, ../../compass/src/main.scss */
-article section.article-content li p:last-child {
+article section.article-content li p:last-child, article.comment li p:last-child {
   margin-bottom: 0;
 }
 /* line 206, ../../compass/src/main.scss */
-article section.article-content li {
+article section.article-content li, article.comment li {
   margin: 30px auto;
 }
 /* line 209, ../../compass/src/main.scss */
-article section.article-content li:first-child {
+article section.article-content li:first-child, article.comment li:first-child {
   margin-top: 0;
 }
 /* line 212, ../../compass/src/main.scss */
-article section.article-content li:last-child {
+article section.article-content li:last-child, article.comment li:last-child {
   margin-bottom: 0;
 }
 
@@ -385,7 +385,7 @@ section.comments > header p a {
 /* line 324, ../../compass/src/main.scss */
 article.comment {
   border: 1px solid #DDDDDD;
-  padding: 5px 0px 0px 5px;
+  padding: 5px 10px 0px 10px;
   margin: 0px -1px 5px 0px;
 }
 /* line 330, ../../compass/src/main.scss */

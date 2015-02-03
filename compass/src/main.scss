@@ -159,7 +159,7 @@ strong {
     }
 }
 
-article section.article-content {
+article section.article-content, article.comment {
     pre, li code, p code {
         /* From en.wikipedia.org's CSS. */
         background-color: #F9F9F9;
@@ -323,7 +323,7 @@ section.comments > header p a {
 }
 article.comment {
     border: 1px solid #DDDDDD;
-    padding: 5px 0px 0px 5px;
+    padding: 5px 10px 0px 10px;
     margin: 0px -1px 5px 0px;
 
     header {

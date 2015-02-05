@@ -47,6 +47,9 @@ body > header > nav {
     li {
         display: inline;
     }
+    li + li:before {
+        content: ":: ";
+    }
     p {
         text-align: right;
     }

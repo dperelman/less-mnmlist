@@ -66,12 +66,12 @@
     </nav>
 {% endif %}
 <header>
-    <h2><a href="{{ SITEURL }}/{{ article.url }}" id="page-title">{{ article.title }}</a></h2>
+    <h2><a href="{{ SITEURL }}/{{ article.url }}" class="article-title">{{ article.title }}</a></h2>
     <div class="posted-line">
         {% if article.status == "draft" %}
 <!-- Post at datetime {{ article.date|strftime("%H:%M %Y-%m-%d") }} -->
         {% endif %}
-        Posted {% if not HIDE_DATE %}<time datetime="{{ article.date.isoformat() }}">{{ article.locale_date }}</time>{% endif %} in <a href="{{ SITEURL }}/{{ article.category.url }}" id="page-category">{{ article.category }}</a>
+        Posted {% if not HIDE_DATE %}<time datetime="{{ article.date.isoformat() }}">{{ article.locale_date }}</time>{% endif %} in <a href="{{ SITEURL }}/{{ article.category.url }}" class="article-category">{{ article.category }}</a>
         {% if article.tags|length > 0 %}
             <div class="tags">
             {% for tag in article.tags|sort %}

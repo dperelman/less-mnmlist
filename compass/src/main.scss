@@ -229,7 +229,7 @@ header {
     padding-bottom: 20px;
     a {
         border-bottom: none;
-        &#page-title { font-weight: bold; }
+        &.article-title { font-weight: bold; }
     }
 }
 

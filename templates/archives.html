@@ -1,12 +1,25 @@
 {% extends "base.html" %}
 {% block content %}
-<section id="content" class="body">
-<h1>Archives for {{ SITENAME }}</h1>
+<section id="content" class="body archive">
+<header>
+    {% block header_nav %}{% endblock %}
+    <h1>Archives for {% block archives_period %}{{ SITENAME }}{% endblock %}</h1>
+</header>
 
 <dl>
 {% for article in dates %}
     <dt>{{ article.locale_date }}</dt>
-    <dd><a href='{{ SITEURL }}/{{ article.url }}'>{{ article.title }}</a></dd>
+    <dd>
+        <a href="{{ SITEURL }}/{{ article.category.url }}">{{ article.category }}</a>:
+        <a href='{{ SITEURL }}/{{ article.url }}'>{{ article.title }}</a>
+        {% if article.tags|length > 0 %}
+            <div class="tags">
+            {% for tag in article.tags|sort %}
+                <a href="{{ SITEURL }}/{{ tag.url }}" class="tag">{{ tag }}</a>
+            {% endfor %}
+            </div>
+        {% endif %}
+    </dd>
 {% endfor %}
 </dl>
 </section>

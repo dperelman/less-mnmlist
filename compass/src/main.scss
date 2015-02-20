@@ -104,9 +104,28 @@ header > .posted-line, article.comment > header > p {
         &:before {
             content: "Tags: ";
         }
-        .tag {
-            margin-left: 1.5ex;
+    }
+}
+
+
+.archive .tags {
+    line-height: 1.5em;
+    margin-top: 0.5em;
+    color: #c0c0c0;
+    display: inline;
+    font-size: 70%;
+    a {
+        color: #999;
+        border-bottom: 0;
+        &:hover {
+            color: #444;
+            text-decoration: underline;
         }
+    }
+}
+.tags {
+    .tag {
+        margin-left: 1.5ex;
     }
 }
 

@@ -1,0 +1,8 @@
+{% extends "archives.html" %}
+{% block archives_period %}
+    {% for part in period | reverse %}
+        <a href = "{{ (loop.index - 1) * "../" }}">{{ part }}</a>
+    {% endfor %}
+{% endblock %}
+{% block header_nav %}
+{% endblock %}

@@ -461,3 +461,7 @@ article.comment-depth3 {
   font-weight: normal;
   margin-left: 2em;
 }
+/* line 409, ../../compass/src/main.scss */
+.archive .comments_count {
+  font-size: 80%;
+}

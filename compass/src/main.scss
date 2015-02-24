@@ -388,3 +388,21 @@ article.comment-depth2 {
 article.comment-depth3 {
     margin-left: 120px;
 }
+
+.archive {
+    h2, h3 {
+        a {
+            border-bottom: 0;
+        }
+    }
+    h2 {
+        @include heading(1.5em, #333);
+        font-weight: bold;
+        margin-bottom: 0;
+    }
+    h3 {
+        @include heading(1.3em, #333);
+        font-weight: normal;
+        margin-left: 2em;
+    }
+}

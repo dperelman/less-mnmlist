@@ -21,7 +21,7 @@ body {
 
 /* line 28, ../../compass/src/main.scss */
 body > header > h1 {
-  color: #333333;
+  color: #333;
   font-family: Helvetica, sans-serif;
   font-size: 1.7em;
   font-weight: normal;
@@ -61,7 +61,7 @@ body > header > nav p {
 
 /* line 58, ../../compass/src/main.scss */
 article > header > h2, h1.comments {
-  color: #333333;
+  color: #333;
   font-family: Helvetica, sans-serif;
   font-size: 1.5em;
   font-weight: bold;
@@ -74,7 +74,7 @@ article > header > h2 a, h1.comments a {
 
 /* line 69, ../../compass/src/main.scss */
 article h1 {
-  color: #333333;
+  color: #333;
   font-family: Helvetica, sans-serif;
   font-size: 1.5em;
   font-weight: normal;
@@ -82,19 +82,19 @@ article h1 {
 }
 /* line 75, ../../compass/src/main.scss */
 article h2 {
-  color: #666666;
+  color: #666;
   font-family: Helvetica, sans-serif;
   font-size: 1.3em;
 }
 /* line 79, ../../compass/src/main.scss */
 article h3 {
-  color: #666666;
+  color: #666;
   font-family: Helvetica, sans-serif;
   font-size: 1em;
 }
 /* line 83, ../../compass/src/main.scss */
 article h4 {
-  color: #666666;
+  color: #666;
   font-family: Helvetica, sans-serif;
   font-size: 0.9em;
 }
@@ -439,4 +439,25 @@ article.comment-depth2 {
 /* line 369, ../../compass/src/main.scss */
 article.comment-depth3 {
   margin-left: 120px;
+}
+
+/* line 394, ../../compass/src/main.scss */
+.archive h2 a, .archive h3 a {
+  border-bottom: 0;
+}
+/* line 398, ../../compass/src/main.scss */
+.archive h2 {
+  color: #333;
+  font-family: Helvetica, sans-serif;
+  font-size: 1.5em;
+  font-weight: bold;
+  margin-bottom: 0;
+}
+/* line 403, ../../compass/src/main.scss */
+.archive h3 {
+  color: #333;
+  font-family: Helvetica, sans-serif;
+  font-size: 1.3em;
+  font-weight: normal;
+  margin-left: 2em;
 }

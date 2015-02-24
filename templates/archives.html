@@ -6,21 +6,13 @@
     <h1>Archives for {% block archives_period %}{{ SITENAME }}{% endblock %}</h1>
 </header>
 
-<dl>
-{% for article in dates %}
-    <dt>{{ article.locale_date }}</dt>
-    <dd>
-        <a href="{{ SITEURL }}/{{ article.category.url }}">{{ article.category }}</a>:
-        <a href='{{ SITEURL }}/{{ article.url }}'>{{ article.title }}</a>
-        {% if article.tags|length > 0 %}
-            <div class="tags">
-            {% for tag in article.tags|sort %}
-                <a href="{{ SITEURL }}/{{ tag.url }}" class="tag">{{ tag }}</a>
-            {% endfor %}
-            </div>
-        {% endif %}
-    </dd>
+{% for year, year_group in dates|groupby('date.year') %}
+    <h2><a href="{{ SITEURL }}/{{ year }}/">{{ year }}</a> ({{ year_group|length }})</h2>
+    {% for month, month_group in year_group|groupby('date.month') %}
+    <h3>
+        <a href="{{ SITEURL }}/{{ year }}/{{ month_group[0].date|strftime('%m') }}/">{{ month_group[0].date|strftime('%B') }} {{ year }}</a> ({{ month_group|length }})
+    </h3>
+    {% endfor %}
 {% endfor %}
-</dl>
 </section>
 {% endblock %}

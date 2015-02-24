@@ -1,8 +1,28 @@
 {% extends "archives.html" %}
-{% block archives_period %}
-    {% for part in period | reverse %}
+{% block content %}
+<section id="content" class="body archive">
+<header>
+    {% block header_nav %}{% endblock %}
+    <h1>Archives for {% for part in period | reverse %}
         <a href = "{{ (loop.index - 1) * "../" }}">{{ part }}</a>
-    {% endfor %}
-{% endblock %}
-{% block header_nav %}
+    {% endfor %}</h1>
+</header>
+
+<dl>
+{% for article in dates %}
+    <dt>{{ article.locale_date }}</dt>
+    <dd>
+        <a href="{{ SITEURL }}/{{ article.category.url }}">{{ article.category }}</a>:
+        <a href='{{ SITEURL }}/{{ article.url }}'>{{ article.title }}</a>
+        {% if article.tags|length > 0 %}
+            <div class="tags">
+            {% for tag in article.tags|sort %}
+                <a href="{{ SITEURL }}/{{ tag.url }}" class="tag">{{ tag }}</a>
+            {% endfor %}
+            </div>
+        {% endif %}
+    </dd>
+{% endfor %}
+</dl>
+</section>
 {% endblock %}

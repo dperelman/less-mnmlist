@@ -21,7 +21,7 @@ body {
 
 /* line 28, ../../compass/src/main.scss */
 body > header > h1 {
-  color: #333;
+  color: #333333;
   font-family: Helvetica, sans-serif;
   font-size: 1.7em;
   font-weight: normal;
@@ -61,7 +61,7 @@ body > header > nav p {
 
 /* line 58, ../../compass/src/main.scss */
 article > header > h2, h1.comments {
-  color: #333;
+  color: #333333;
   font-family: Helvetica, sans-serif;
   font-size: 1.5em;
   font-weight: bold;
@@ -74,7 +74,7 @@ article > header > h2 a, h1.comments a {
 
 /* line 69, ../../compass/src/main.scss */
 article h1 {
-  color: #333;
+  color: #333333;
   font-family: Helvetica, sans-serif;
   font-size: 1.5em;
   font-weight: normal;
@@ -82,19 +82,19 @@ article h1 {
 }
 /* line 75, ../../compass/src/main.scss */
 article h2 {
-  color: #666;
+  color: #666666;
   font-family: Helvetica, sans-serif;
   font-size: 1.3em;
 }
 /* line 79, ../../compass/src/main.scss */
 article h3 {
-  color: #666;
+  color: #666666;
   font-family: Helvetica, sans-serif;
   font-size: 1em;
 }
 /* line 83, ../../compass/src/main.scss */
 article h4 {
-  color: #666;
+  color: #666666;
   font-family: Helvetica, sans-serif;
   font-size: 0.9em;
 }
@@ -447,7 +447,7 @@ article.comment-depth3 {
 }
 /* line 398, ../../compass/src/main.scss */
 .archive h2 {
-  color: #333;
+  color: #333333;
   font-family: Helvetica, sans-serif;
   font-size: 1.5em;
   font-weight: bold;
@@ -455,7 +455,7 @@ article.comment-depth3 {
 }
 /* line 403, ../../compass/src/main.scss */
 .archive h3 {
-  color: #333;
+  color: #333333;
   font-family: Helvetica, sans-serif;
   font-size: 1.3em;
   font-weight: normal;
@@ -464,4 +464,23 @@ article.comment-depth3 {
 /* line 409, ../../compass/src/main.scss */
 .archive .comments_count {
   font-size: 80%;
+}
+
+/* line 415, ../../compass/src/main.scss */
+kbd {
+  padding: .1em .6em;
+  border: 1px solid #ccc;
+  font-size: 80%;
+  font-family: Arial,Helvetica,sans-serif;
+  background-color: #f7f7f7;
+  color: #333;
+  -moz-box-shadow: 0 1px 0 rgba(0, 0, 0, 0.2), 0 0 0 2px white inset;
+  -webkit-box-shadow: 0 1px 0 rgba(0, 0, 0, 0.2), 0 0 0 2px white inset;
+  box-shadow: 0 1px 0 rgba(0, 0, 0, 0.2), 0 0 0 2px white inset;
+  border-radius: 3px;
+  display: inline-block;
+  margin: 0 .1em;
+  text-shadow: 0 1px 0 #fff;
+  line-height: 1.4;
+  white-space: nowrap;
 }

@@ -496,3 +496,11 @@ kbd {
     text-rendering: optimizeLegibility;
 }
 
+nav.paginator {
+    font-size: 90%;
+    text-align: center;
+    color: #666;
+    a {
+        font-size: 100%;
+    }
+}

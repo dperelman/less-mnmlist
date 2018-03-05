@@ -123,8 +123,28 @@ header > .posted-line a:hover, article.comment > header > p a:hover {
 header > .posted-line .tags:before, article.comment > header > p .tags:before {
   content: "Tags: ";
 }
-/* line 107, ../../compass/src/main.scss */
-header > .posted-line .tags .tag, article.comment > header > p .tags .tag {
+
+/* line 111, ../../compass/src/main.scss */
+.archive .tags {
+  line-height: 1.5em;
+  margin-top: 0.5em;
+  color: #c0c0c0;
+  display: inline;
+  font-size: 70%;
+}
+/* line 117, ../../compass/src/main.scss */
+.archive .tags a {
+  color: #999;
+  border-bottom: 0;
+}
+/* line 120, ../../compass/src/main.scss */
+.archive .tags a:hover {
+  color: #444;
+  text-decoration: underline;
+}
+
+/* line 127, ../../compass/src/main.scss */
+.tags .tag {
   margin-left: 1.5ex;
 }
 

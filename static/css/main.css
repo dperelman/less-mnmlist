@@ -21,7 +21,7 @@ body {
 
 /* line 28, ../../compass/src/main.scss */
 body > header > h1 {
-  color: #333333;
+  color: #333;
   font-family: Helvetica, sans-serif;
   font-size: 1.7em;
   font-weight: normal;
@@ -61,7 +61,7 @@ body > header > nav p {
 
 /* line 58, ../../compass/src/main.scss */
 article > header > h2, h1.comments {
-  color: #333333;
+  color: #333;
   font-family: Helvetica, sans-serif;
   font-size: 1.5em;
   font-weight: bold;
@@ -74,7 +74,7 @@ article > header > h2 a, h1.comments a {
 
 /* line 69, ../../compass/src/main.scss */
 article h1 {
-  color: #333333;
+  color: #333;
   font-family: Helvetica, sans-serif;
   font-size: 1.5em;
   font-weight: normal;
@@ -82,19 +82,19 @@ article h1 {
 }
 /* line 75, ../../compass/src/main.scss */
 article h2 {
-  color: #666666;
+  color: #666;
   font-family: Helvetica, sans-serif;
   font-size: 1.3em;
 }
 /* line 79, ../../compass/src/main.scss */
 article h3 {
-  color: #666666;
+  color: #666;
   font-family: Helvetica, sans-serif;
   font-size: 1em;
 }
 /* line 83, ../../compass/src/main.scss */
 article h4 {
-  color: #666666;
+  color: #666;
   font-family: Helvetica, sans-serif;
   font-size: 0.9em;
 }
@@ -148,32 +148,32 @@ header > .posted-line .tags:before, article.comment > header > p .tags:before {
   margin-left: 1.5ex;
 }
 
-/* line 113, ../../compass/src/main.scss */
+/* line 132, ../../compass/src/main.scss */
 img {
   border: none;
 }
 
-/* line 117, ../../compass/src/main.scss */
+/* line 136, ../../compass/src/main.scss */
 blockquote {
   border-left: 1px solid #A5ABAB;
   margin: 0px;
   padding: 0 12px 0 12px;
 }
 
-/* line 123, ../../compass/src/main.scss */
+/* line 142, ../../compass/src/main.scss */
 p {
   line-height: 30px;
   margin: 30px auto;
   text-indent: 0px;
   text-align: justify;
 }
-/* line 127, ../../compass/src/main.scss */
+/* line 146, ../../compass/src/main.scss */
 p.caption {
   font-size: 80%;
   margin-top: 0;
 }
 
-/* line 134, ../../compass/src/main.scss */
+/* line 153, ../../compass/src/main.scss */
 dd {
   line-height: 30px;
   margin: auto auto 30px 40px;
@@ -181,44 +181,44 @@ dd {
   text-align: justify;
 }
 
-/* line 141, ../../compass/src/main.scss */
+/* line 160, ../../compass/src/main.scss */
 a {
   border-bottom: #999 1px solid;
   color: #303030;
   text-decoration: none;
 }
-/* line 145, ../../compass/src/main.scss */
+/* line 164, ../../compass/src/main.scss */
 a:hover {
   color: #999;
 }
-/* line 147, ../../compass/src/main.scss */
+/* line 166, ../../compass/src/main.scss */
 a:hover strong {
   color: #999;
 }
 
-/* line 153, ../../compass/src/main.scss */
+/* line 172, ../../compass/src/main.scss */
 ul, ol {
   padding: .5em 0em 1em 3.2em;
 }
-/* line 155, ../../compass/src/main.scss */
+/* line 174, ../../compass/src/main.scss */
 ul li, ol li {
   line-height: 30px;
   padding: 6px 0 0 0;
 }
 
-/* line 161, ../../compass/src/main.scss */
+/* line 180, ../../compass/src/main.scss */
 strong {
   color: #555555;
   font-family: Georgia, "Times New Roman", Times, serif;
   font-weight: bold;
 }
-/* line 166, ../../compass/src/main.scss */
+/* line 185, ../../compass/src/main.scss */
 strong code {
   color: purple;
   font-family: Inconsolata, Monaco, monospace, Courier;
 }
 
-/* line 173, ../../compass/src/main.scss */
+/* line 192, ../../compass/src/main.scss */
 article section.article-content pre, article section.article-content li code, article section.article-content p code, article section.article-content dd code, article.comment pre, article.comment li code, article.comment p code, article.comment dd code {
   /* From en.wikipedia.org's CSS. */
   background-color: #F9F9F9;
@@ -228,100 +228,100 @@ article section.article-content pre, article section.article-content li code, ar
   font-family: Inconsolata, Monaco, monospace, Courier;
   line-height: 1.2em;
 }
-/* line 182, ../../compass/src/main.scss */
+/* line 201, ../../compass/src/main.scss */
 article section.article-content pre strong, article section.article-content li code strong, article section.article-content p code strong, article section.article-content dd code strong, article.comment pre strong, article.comment li code strong, article.comment p code strong, article.comment dd code strong {
   color: purple;
   font-family: Inconsolata, Monaco, monospace, Courier;
 }
-/* line 186, ../../compass/src/main.scss */
+/* line 205, ../../compass/src/main.scss */
 article section.article-content pre i, article section.article-content pre em, article section.article-content li code i, article section.article-content li code em, article section.article-content p code i, article section.article-content p code em, article section.article-content dd code i, article section.article-content dd code em, article.comment pre i, article.comment pre em, article.comment li code i, article.comment li code em, article.comment p code i, article.comment p code em, article.comment dd code i, article.comment dd code em {
   color: #BB60D5;
   font-family: Inconsolata, Monaco, monospace, Courier;
 }
-/* line 191, ../../compass/src/main.scss */
+/* line 210, ../../compass/src/main.scss */
 article section.article-content a code, article section.article-content code a, article section.article-content pre a, article.comment a code, article.comment code a, article.comment pre a {
   color: #22a;
 }
-/* line 193, ../../compass/src/main.scss */
+/* line 212, ../../compass/src/main.scss */
 article section.article-content a code:hover, article section.article-content code a:hover, article section.article-content pre a:hover, article.comment a code:hover, article.comment code a:hover, article.comment pre a:hover {
   text-decoration: underline;
   color: #33d;
 }
-/* line 201, ../../compass/src/main.scss */
+/* line 220, ../../compass/src/main.scss */
 article section.article-content code a, article section.article-content pre a, article.comment code a, article.comment pre a {
   border-bottom: none;
 }
-/* line 205, ../../compass/src/main.scss */
+/* line 224, ../../compass/src/main.scss */
 article section.article-content pre, article.comment pre {
   font-size: 0.8em;
   overflow: auto;
   padding: 10px;
 }
-/* line 210, ../../compass/src/main.scss */
+/* line 229, ../../compass/src/main.scss */
 article section.article-content li p:first-child, article.comment li p:first-child {
   margin-top: 0;
 }
-/* line 213, ../../compass/src/main.scss */
+/* line 232, ../../compass/src/main.scss */
 article section.article-content li p:last-child, article.comment li p:last-child {
   margin-bottom: 0;
 }
-/* line 216, ../../compass/src/main.scss */
+/* line 235, ../../compass/src/main.scss */
 article section.article-content li, article.comment li {
   margin: 30px auto;
   text-align: justify;
 }
-/* line 220, ../../compass/src/main.scss */
+/* line 239, ../../compass/src/main.scss */
 article section.article-content li:first-child, article.comment li:first-child {
   margin-top: 0;
 }
-/* line 223, ../../compass/src/main.scss */
+/* line 242, ../../compass/src/main.scss */
 article section.article-content li:last-child, article.comment li:last-child {
   margin-bottom: 0;
 }
 
-/* line 228, ../../compass/src/main.scss */
+/* line 247, ../../compass/src/main.scss */
 header {
   padding-bottom: 20px;
 }
-/* line 230, ../../compass/src/main.scss */
+/* line 249, ../../compass/src/main.scss */
 header a {
   border-bottom: none;
 }
-/* line 232, ../../compass/src/main.scss */
-header a#page-title {
+/* line 251, ../../compass/src/main.scss */
+header a.article-title {
   font-weight: bold;
 }
 
-/* line 236, ../../compass/src/main.scss */
+/* line 255, ../../compass/src/main.scss */
 #article-list {
   margin-top: 100px;
 }
-/* line 238, ../../compass/src/main.scss */
+/* line 257, ../../compass/src/main.scss */
 #article-list ol li {
   line-height: 1.2em;
   list-style-type: none;
   padding-bottom: 10px;
 }
 
-/* line 245, ../../compass/src/main.scss */
+/* line 264, ../../compass/src/main.scss */
 .note {
   background: #efefef;
   margin: 1em 0;
 }
-/* line 248, ../../compass/src/main.scss */
+/* line 267, ../../compass/src/main.scss */
 .note p {
   display: inline;
 }
-/* line 250, ../../compass/src/main.scss */
+/* line 269, ../../compass/src/main.scss */
 .note p.first {
   font-weight: bold;
 }
-/* line 252, ../../compass/src/main.scss */
+/* line 271, ../../compass/src/main.scss */
 .note p.first:after {
   content: ' : ';
 }
 
-/* line 259, ../../compass/src/main.scss */
+/* line 278, ../../compass/src/main.scss */
 footer {
   background: #fff;
   color: #666;
@@ -330,133 +330,133 @@ footer {
   letter-spacing: 4px;
   margin-left: 20px;
 }
-/* line 266, ../../compass/src/main.scss */
+/* line 285, ../../compass/src/main.scss */
 footer a {
   border-bottom: none;
   color: #c0c0c0;
 }
-/* line 270, ../../compass/src/main.scss */
+/* line 289, ../../compass/src/main.scss */
 footer li {
   display: inline;
 }
-/* line 273, ../../compass/src/main.scss */
+/* line 292, ../../compass/src/main.scss */
 footer p {
   text-align: right;
 }
 
-/* line 278, ../../compass/src/main.scss */
+/* line 297, ../../compass/src/main.scss */
 nav {
   width: 100%;
   height: 6px;
 }
-/* line 281, ../../compass/src/main.scss */
+/* line 300, ../../compass/src/main.scss */
 nav a {
   border-bottom: 0;
   color: #999;
   font-size: 13px;
 }
-/* line 284, ../../compass/src/main.scss */
+/* line 303, ../../compass/src/main.scss */
 nav a:hover {
   color: #444;
   text-decoration: underline;
 }
-/* line 289, ../../compass/src/main.scss */
+/* line 308, ../../compass/src/main.scss */
 nav a.prevarticle {
   float: left;
 }
-/* line 291, ../../compass/src/main.scss */
+/* line 310, ../../compass/src/main.scss */
 nav a.prevarticle:before {
   content: "«";
 }
-/* line 295, ../../compass/src/main.scss */
+/* line 314, ../../compass/src/main.scss */
 nav a.nextarticle {
   float: right;
 }
-/* line 297, ../../compass/src/main.scss */
+/* line 316, ../../compass/src/main.scss */
 nav a.nextarticle:after {
   content: "»";
 }
 
-/* line 304, ../../compass/src/main.scss */
+/* line 323, ../../compass/src/main.scss */
 ul.tagcloud {
   list-style: none;
   padding: 0;
 }
-/* line 307, ../../compass/src/main.scss */
+/* line 326, ../../compass/src/main.scss */
 ul.tagcloud li {
   display: inline-block;
   margin-left: 1ex;
 }
-/* line 311, ../../compass/src/main.scss */
+/* line 330, ../../compass/src/main.scss */
 ul.tagcloud li.tag-1 {
   font-size: 150%;
 }
-/* line 314, ../../compass/src/main.scss */
+/* line 333, ../../compass/src/main.scss */
 ul.tagcloud li.tag-2 {
   font-size: 120%;
 }
-/* line 317, ../../compass/src/main.scss */
+/* line 336, ../../compass/src/main.scss */
 ul.tagcloud li.tag-3 {
   font-size: 100%;
 }
-/* line 320, ../../compass/src/main.scss */
+/* line 339, ../../compass/src/main.scss */
 ul.tagcloud li.tag-4 {
   font-size: 80%;
 }
 
-/* line 326, ../../compass/src/main.scss */
+/* line 345, ../../compass/src/main.scss */
 .footnote li {
   padding: 0;
   font-size: 80%;
 }
 
-/* line 332, ../../compass/src/main.scss */
+/* line 351, ../../compass/src/main.scss */
 section.comments > header p a {
   border-bottom: 1px solid #999;
 }
 
-/* line 335, ../../compass/src/main.scss */
+/* line 354, ../../compass/src/main.scss */
 article.comment {
   border: 1px solid #DDDDDD;
   padding: 5px 10px 0px 10px;
   margin: 0px -1px 5px 0px;
 }
-/* line 341, ../../compass/src/main.scss */
+/* line 360, ../../compass/src/main.scss */
 article.comment header img {
   float: left;
   margin: 7px;
 }
-/* line 345, ../../compass/src/main.scss */
+/* line 364, ../../compass/src/main.scss */
 article.comment header p, article.comment header h4 {
   margin: 0;
 }
-/* line 348, ../../compass/src/main.scss */
+/* line 367, ../../compass/src/main.scss */
 article.comment header a.permalink {
   font-size: 80%;
   margin-right: 1ex;
   float: right;
   color: #888;
 }
-/* line 354, ../../compass/src/main.scss */
+/* line 373, ../../compass/src/main.scss */
 article.comment header a.permalink:hover {
   color: #555;
 }
-/* line 359, ../../compass/src/main.scss */
+/* line 378, ../../compass/src/main.scss */
 article.comment p {
   margin-top: 0;
 }
 
-/* line 363, ../../compass/src/main.scss */
+/* line 382, ../../compass/src/main.scss */
 article.comment-depth1 {
   margin-left: 50px;
 }
 
-/* line 366, ../../compass/src/main.scss */
+/* line 385, ../../compass/src/main.scss */
 article.comment-depth2 {
   margin-left: 90px;
 }
 
-/* line 369, ../../compass/src/main.scss */
+/* line 388, ../../compass/src/main.scss */
 article.comment-depth3 {
   margin-left: 120px;
 }
@@ -467,7 +467,7 @@ article.comment-depth3 {
 }
 /* line 398, ../../compass/src/main.scss */
 .archive h2 {
-  color: #333333;
+  color: #333;
   font-family: Helvetica, sans-serif;
   font-size: 1.5em;
   font-weight: bold;
@@ -475,7 +475,7 @@ article.comment-depth3 {
 }
 /* line 403, ../../compass/src/main.scss */
 .archive h3 {
-  color: #333333;
+  color: #333;
   font-family: Helvetica, sans-serif;
   font-size: 1.3em;
   font-weight: normal;
@@ -494,9 +494,9 @@ kbd {
   font-family: Arial,Helvetica,sans-serif;
   background-color: #f7f7f7;
   color: #333;
-  -moz-box-shadow: 0 1px 0 rgba(0, 0, 0, 0.2), 0 0 0 2px white inset;
-  -webkit-box-shadow: 0 1px 0 rgba(0, 0, 0, 0.2), 0 0 0 2px white inset;
-  box-shadow: 0 1px 0 rgba(0, 0, 0, 0.2), 0 0 0 2px white inset;
+  -moz-box-shadow: 0 1px 0 rgba(0, 0, 0, 0.2), 0 0 0 2px #fff inset;
+  -webkit-box-shadow: 0 1px 0 rgba(0, 0, 0, 0.2), 0 0 0 2px #fff inset;
+  box-shadow: 0 1px 0 rgba(0, 0, 0, 0.2), 0 0 0 2px #fff inset;
   border-radius: 3px;
   display: inline-block;
   margin: 0 .1em;
@@ -512,56 +512,48 @@ kbd {
   font-weight: 100;
   font-style: normal;
 }
-
 @font-face {
   font-family: 'Hasklig';
   src: url("fonts/Hasklig-Light.woff") format("woff");
   font-weight: 200;
   font-style: normal;
 }
-
 @font-face {
   font-family: 'Hasklig';
   src: url("fonts/Hasklig-Regular.woff") format("woff");
   font-weight: 400;
   font-style: normal;
 }
-
 @font-face {
   font-family: 'Hasklig';
   src: url("fonts/Hasklig-Medium.woff") format("woff");
   font-weight: 500;
   font-style: normal;
 }
-
 @font-face {
   font-family: 'Hasklig';
   src: url("fonts/Hasklig-Semibold.woff") format("woff");
   font-weight: 600;
   font-style: normal;
 }
-
 @font-face {
   font-family: 'Hasklig';
   src: url("fonts/Hasklig-Bold.woff") format("woff");
   font-weight: 700;
   font-style: normal;
 }
-
 @font-face {
   font-family: 'Hasklig';
   src: url("fonts/Hasklig-Black.woff") format("woff");
   font-weight: 800;
   font-style: normal;
 }
-
 @font-face {
   font-family: 'SansBullshitSans';
   src: url("fonts/SansBullshitSans.ttf");
   font-weight: normal;
   font-style: normal;
 }
-
 /* line 485, ../../compass/src/main.scss */
 .hasklig {
   font-family: 'Hasklig', monospace !important;

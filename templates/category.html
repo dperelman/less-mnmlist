@@ -2,7 +2,7 @@
 {% block title %}{{ category }} : {{ super() }}{% endblock %}
 {% block feedlinks %}
 {% if CATEGORY_FEED_ATOM %}
-    <link rel="alternate" type="application/atom+xml" title="{{SITENAME}} {{category}} ATOM Feed" href="{{ FEED_DOMAIN }}/{{ CATEGORY_FEED_ATOM|format(category.slug) }}">
+    <link rel="alternate" type="application/atom+xml" title="{{SITENAME}} {{category}} ATOM Feed" href="{{ FEED_DOMAIN }}/{{ CATEGORY_FEED_ATOM|format(slug=category.slug) }}">
 {% endif %}
 {{ super() }}
 {% endblock %}

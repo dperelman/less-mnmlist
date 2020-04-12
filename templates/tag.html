@@ -2,7 +2,7 @@
 {% block title %}{{ tag }} : {{ super() }}{% endblock %}
 {% block feedlinks %}
 {% if TAG_FEED_ATOM %}
-    <link rel="alternate" type="application/atom+xml" title="{{SITENAME}} {{tag}} ATOM Feed" href="{{ FEED_DOMAIN }}/{{ TAG_FEED_ATOM|format(tag.slug) }}">
+    <link rel="alternate" type="application/atom+xml" title="{{SITENAME}} {{tag}} ATOM Feed" href="{{ FEED_DOMAIN }}/{{ TAG_FEED_ATOM|format(slug=tag.slug) }}">
 {% endif %}
 {{ super() }}
 {% endblock %}

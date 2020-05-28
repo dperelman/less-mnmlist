@@ -588,3 +588,19 @@ nav.paginator {
 nav.paginator a {
   font-size: 100%;
 }
+
+/* line 513, ../../compass/src/main.scss */
+table {
+  border-spacing: 0;
+  border-collapse: collapse;
+}
+
+/* line 517, ../../compass/src/main.scss */
+table, tr, th, td {
+  border: 1px solid #DDD;
+}
+
+/* line 520, ../../compass/src/main.scss */
+tr:nth-child(2n) {
+  background-color: #f6f8fa;
+}

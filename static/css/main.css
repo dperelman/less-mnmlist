@@ -272,7 +272,7 @@ article section.article-content li p:last-child, article.comment li p:last-child
 }
 /* line 240, ../../compass/src/main.scss */
 article section.article-content li, article.comment li {
-  margin: 30px auto;
+  margin: 0 auto;
   text-align: justify;
 }
 /* line 244, ../../compass/src/main.scss */

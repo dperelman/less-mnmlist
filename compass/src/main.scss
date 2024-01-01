@@ -212,10 +212,10 @@ article section.article-content, article.comment {
             font-family: Inconsolata, Monaco, monospace, Courier;
         }
     }
-    a code, code a, pre a {
+    a code, code a, pre a, a kbd, kbd a {
         color: #22a;
+        text-decoration: underline;
         &:hover {
-            text-decoration: underline;
             color: #33d;
         }
         //&:visited {

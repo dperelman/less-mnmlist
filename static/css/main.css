@@ -244,12 +244,12 @@ article section.article-content pre i, article section.article-content pre em, a
   font-family: Inconsolata, Monaco, monospace, Courier;
 }
 /* line 215, ../../compass/src/main.scss */
-article section.article-content a code, article section.article-content code a, article section.article-content pre a, article.comment a code, article.comment code a, article.comment pre a {
+article section.article-content a code, article section.article-content code a, article section.article-content pre a, article section.article-content a kbd, article section.article-content kbd a, article.comment a code, article.comment code a, article.comment pre a, article.comment a kbd, article.comment kbd a {
   color: #22a;
-}
-/* line 217, ../../compass/src/main.scss */
-article section.article-content a code:hover, article section.article-content code a:hover, article section.article-content pre a:hover, article.comment a code:hover, article.comment code a:hover, article.comment pre a:hover {
   text-decoration: underline;
+}
+/* line 218, ../../compass/src/main.scss */
+article section.article-content a code:hover, article section.article-content code a:hover, article section.article-content pre a:hover, article section.article-content a kbd:hover, article section.article-content kbd a:hover, article.comment a code:hover, article.comment code a:hover, article.comment pre a:hover, article.comment a kbd:hover, article.comment kbd a:hover {
   color: #33d;
 }
 /* line 225, ../../compass/src/main.scss */

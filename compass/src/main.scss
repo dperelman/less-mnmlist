@@ -91,12 +91,16 @@ article {
 }
 
 .headerlink {
+    visibility: hidden;
     opacity: 0;
     position: absolute;
     left: -1.3ch;
 }
 
-article {
+article section.article-full-content {
+    .headerlink {
+        visibility: visible;
+    }
     h1, h2, h3, h4 {
         position: relative;
     }

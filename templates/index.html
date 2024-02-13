@@ -7,7 +7,7 @@
 
         <article>
         {{ article_header(SITEURL, SITENAME, SITESUBTITLE, article, include_history=False) }}
-            <section class="article-content">
+            <section class="article-content article-summary-content">
                 {{ article.summary }}
             </section>
             {% if article.summary != article.content %}

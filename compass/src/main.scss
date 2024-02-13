@@ -93,11 +93,13 @@ article {
 .headerlink {
     opacity: 0;
     position: absolute;
-    margin-left: -1.4ch;
-    border-right: 0.5ch white;
+    left: -1.3ch;
 }
 
 article {
+    h1, h2, h3, h4 {
+        position: relative;
+    }
     h1:hover, h2:hover, h3:hover, h4:hover {
         .headerlink {
             opacity: 1;

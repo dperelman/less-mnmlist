@@ -90,6 +90,24 @@ article {
     }
 }
 
+.headerlink {
+    opacity: 0;
+    position: absolute;
+    margin-left: -1.4ch;
+    border-right: 0.5ch white;
+}
+
+article {
+    h1:hover, h2:hover, h3:hover, h4:hover {
+        .headerlink {
+            opacity: 1;
+        }
+    }
+    .headerlink:hover {
+        opacity: 1;
+    }
+}
+
 header > .posted-line, article.comment > header > p {
     font-size: 50%;
     line-height: 1.5em;

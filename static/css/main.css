@@ -113,19 +113,19 @@ article h4 {
 }
 
 /* line 101, ../../compass/src/main.scss */
-article section.article-full-content .headerlink {
+article section .headerlink {
   visibility: visible;
 }
 /* line 104, ../../compass/src/main.scss */
-article section.article-full-content h1, article section.article-full-content h2, article section.article-full-content h3, article section.article-full-content h4 {
+article section h1, article section h2, article section h3, article section h4 {
   position: relative;
 }
 /* line 108, ../../compass/src/main.scss */
-article section.article-full-content h1:hover .headerlink, article section.article-full-content h2:hover .headerlink, article section.article-full-content h3:hover .headerlink, article section.article-full-content h4:hover .headerlink {
+article section h1:hover .headerlink, article section h2:hover .headerlink, article section h3:hover .headerlink, article section h4:hover .headerlink {
   opacity: 1;
 }
 /* line 112, ../../compass/src/main.scss */
-article section.article-full-content .headerlink:hover {
+article section .headerlink:hover {
   opacity: 1;
 }
 

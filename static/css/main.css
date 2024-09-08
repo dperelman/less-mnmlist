@@ -457,45 +457,49 @@ article.comment header img {
   margin: 7px;
 }
 /* line 393, ../../compass/src/main.scss */
+article.comment header h4 {
+  z-index: -1;
+}
+/* line 396, ../../compass/src/main.scss */
 article.comment header p, article.comment header h4 {
   margin: 0;
 }
-/* line 396, ../../compass/src/main.scss */
+/* line 399, ../../compass/src/main.scss */
 article.comment header a.permalink {
   font-size: 80%;
   margin-right: 1ex;
   float: right;
   color: #888;
 }
-/* line 402, ../../compass/src/main.scss */
+/* line 405, ../../compass/src/main.scss */
 article.comment header a.permalink:hover {
   color: #555;
 }
-/* line 407, ../../compass/src/main.scss */
+/* line 410, ../../compass/src/main.scss */
 article.comment p {
   margin-top: 0;
 }
 
-/* line 411, ../../compass/src/main.scss */
+/* line 414, ../../compass/src/main.scss */
 article.comment-depth1 {
   margin-left: 50px;
 }
 
-/* line 414, ../../compass/src/main.scss */
+/* line 417, ../../compass/src/main.scss */
 article.comment-depth2 {
   margin-left: 90px;
 }
 
-/* line 417, ../../compass/src/main.scss */
+/* line 420, ../../compass/src/main.scss */
 article.comment-depth3 {
   margin-left: 120px;
 }
 
-/* line 423, ../../compass/src/main.scss */
+/* line 426, ../../compass/src/main.scss */
 .archive h2 a, .archive h3 a {
   border-bottom: 0;
 }
-/* line 427, ../../compass/src/main.scss */
+/* line 430, ../../compass/src/main.scss */
 .archive h2 {
   color: #333;
   font-family: Helvetica, sans-serif;
@@ -503,7 +507,7 @@ article.comment-depth3 {
   font-weight: bold;
   margin-bottom: 0;
 }
-/* line 432, ../../compass/src/main.scss */
+/* line 435, ../../compass/src/main.scss */
 .archive h3 {
   color: #333;
   font-family: Helvetica, sans-serif;
@@ -511,12 +515,12 @@ article.comment-depth3 {
   font-weight: normal;
   margin-left: 2em;
 }
-/* line 438, ../../compass/src/main.scss */
+/* line 441, ../../compass/src/main.scss */
 .archive .comments_count {
   font-size: 80%;
 }
 
-/* line 444, ../../compass/src/main.scss */
+/* line 447, ../../compass/src/main.scss */
 kbd {
   padding: .1em .6em;
   border: 1px solid #ccc;
@@ -584,17 +588,17 @@ kbd {
   font-weight: normal;
   font-style: normal;
 }
-/* line 514, ../../compass/src/main.scss */
+/* line 517, ../../compass/src/main.scss */
 .hasklig {
   font-family: 'Hasklig', monospace !important;
 }
 
-/* line 517, ../../compass/src/main.scss */
+/* line 520, ../../compass/src/main.scss */
 .sansbullshitsans {
   font-family: 'SansBullshitSans', sans-serif !important;
 }
 
-/* line 520, ../../compass/src/main.scss */
+/* line 523, ../../compass/src/main.scss */
 .hasklig, .sansbullshitsans {
   /* The "right" way to enable ligatures. Only supported by recent browsers. */
   font-variant-ligatures: discretionary-ligatures;
@@ -603,29 +607,29 @@ kbd {
   text-rendering: optimizeLegibility;
 }
 
-/* line 528, ../../compass/src/main.scss */
+/* line 531, ../../compass/src/main.scss */
 nav.paginator {
   font-size: 90%;
   text-align: center;
   color: #666;
 }
-/* line 532, ../../compass/src/main.scss */
+/* line 535, ../../compass/src/main.scss */
 nav.paginator a {
   font-size: 100%;
 }
 
-/* line 537, ../../compass/src/main.scss */
+/* line 540, ../../compass/src/main.scss */
 table {
   border-spacing: 0;
   border-collapse: collapse;
 }
 
-/* line 541, ../../compass/src/main.scss */
+/* line 544, ../../compass/src/main.scss */
 table, tr, th, td {
   border: 1px solid #DDD;
 }
 
-/* line 544, ../../compass/src/main.scss */
+/* line 547, ../../compass/src/main.scss */
 tr:nth-child(2n) {
   background-color: #f6f8fa;
 }

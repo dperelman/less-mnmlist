@@ -218,7 +218,7 @@ strong {
 }
 
 article section.article-content, article.comment {
-    pre, li code, p code, dd code {
+    pre, li:not([id^="fn:"]) code, p code, dd code {
         /* From en.wikipedia.org's CSS. */
         background-color: #F9F9F9;
         border: 1px solid #DDD;

@@ -249,7 +249,11 @@ strong code {
 }
 
 /* line 221, ../../compass/src/main.scss */
-article section.article-content pre, article section.article-content li code, article section.article-content p code, article section.article-content dd code, article.comment pre, article.comment li code, article.comment p code, article.comment dd code {
+article section.article-content pre,
+article section.article-content li:not([id^="fn:"]) code,
+article section.article-content p code, article section.article-content dd code,
+article.comment pre, article.comment li:not([id^="fn:"]) code,
+article.comment p code, article.comment dd code {
   /* From en.wikipedia.org's CSS. */
   background-color: #F9F9F9;
   border: 1px solid #DDD;
@@ -259,12 +263,26 @@ article section.article-content pre, article section.article-content li code, ar
   line-height: 1.2em;
 }
 /* line 230, ../../compass/src/main.scss */
-article section.article-content pre strong, article section.article-content li code strong, article section.article-content p code strong, article section.article-content dd code strong, article.comment pre strong, article.comment li code strong, article.comment p code strong, article.comment dd code strong {
+article section.article-content pre strong,
+article section.article-content li:not([id^="fn:"]) code strong,
+article section.article-content p code strong,
+article section.article-content dd code strong, article.comment pre strong,
+article.comment li:not([id^="fn:"]) code strong, article.comment p code strong,
+article.comment dd code strong {
   color: purple;
   font-family: Inconsolata, Monaco, monospace, Courier;
 }
 /* line 234, ../../compass/src/main.scss */
-article section.article-content pre i, article section.article-content pre em, article section.article-content li code i, article section.article-content li code em, article section.article-content p code i, article section.article-content p code em, article section.article-content dd code i, article section.article-content dd code em, article.comment pre i, article.comment pre em, article.comment li code i, article.comment li code em, article.comment p code i, article.comment p code em, article.comment dd code i, article.comment dd code em {
+article section.article-content pre i, article section.article-content pre em,
+article section.article-content li:not([id^="fn:"]) code i,
+article section.article-content li:not([id^="fn:"]) code em,
+article section.article-content p code i,
+article section.article-content p code em,
+article section.article-content dd code i,
+article section.article-content dd code em, article.comment pre i,
+article.comment pre em, article.comment li:not([id^="fn:"]) code i,
+article.comment li:not([id^="fn:"]) code em, article.comment p code i,
+article.comment p code em, article.comment dd code i, article.comment dd code em {
   color: #BB60D5;
   font-family: Inconsolata, Monaco, monospace, Courier;
 }
